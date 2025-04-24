@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subjects & Programs | Study Global</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Discover Academic Programs</h1>
+    <p>Explore thousands of courses and degrees from top universities worldwide to find your perfect match</p>
+  </header>
+
+  <div class="container">
+    <div class="search-bar">
+      <i class="fas fa-search"></i>
+      <input type="text" id="searchInput" placeholder="Search programs, subjects, or universities...">
+    </div>
+
+    <div class="filter-section">
+      <div class="filter-header">
+        <h2>Filter Programs</h2>
+        <button class="filter-reset">Reset All</button>
+      </div>
+      <div class="filter-options">
+        <div class="filter-option">
+          <input type="checkbox" id="filter-cs" value="cs">
+          <label for="filter-cs"><i class="fas fa-laptop-code"></i> Computer Science</label>
+        </div>
+        <div class="filter-option">
+          <input type="checkbox" id="filter-business" value="business">
+          <label for="filter-business"><i class="fas fa-chart-line"></i> Business</label>
+        </div>
+        <div class="filter-option">
+          <input type="checkbox" id="filter-engineering" value="engineering">
+          <label for="filter-engineering"><i class="fas fa-cogs"></i> Engineering</label>
+        </div>
+        <div class="filter-option">
+          <input type="checkbox" id="filter-medicine" value="medicine">
+          <label for="filter-medicine"><i class="fas fa-heartbeat"></i> Medicine</label>
+        </div>
+        <div class="filter-option">
+          <input type="checkbox" id="filter-arts" value="arts">
+          <label for="filter-arts"><i class="fas fa-palette"></i> Arts</label>
+        </div>
+        <div class="filter-option">
+          <input type="checkbox" id="filter-law" value="law">
+          <label for="filter-law"><i class="fas fa-gavel"></i> Law</label>
+        </div>
+        <div class="filter-option">
+          <input type="checkbox" id="filter-education" value="education">
+          <label for="filter-education"><i class="fas fa-graduation-cap"></i> Education</label>
+        </div>
+        <div class="filter-option">
+          <input type="checkbox" id="filter-science" value="science">
+          <label for="filter-science"><i class="fas fa-flask"></i> Science</label>
+        </div>
+        <div class="filter-option">
+          <input type="checkbox" id="filter-architecture" value="architecture">
+          <label for="filter-architecture"><i class="fas fa-archway"></i> Architecture</label>
+        </div>
+        <div class="filter-option">
+          <input type="checkbox" id="filter-pharmacy" value="pharmacy">
+          <label for="filter-pharmacy"><i class="fas fa-pills"></i> Pharmacy</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid" id="subjectsGrid">
+      <div class="card" data-category="cs" data-search="computer science ai software engineering data science technology programming">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Computer Science">
+          <span class="category-tag">Technology</span>
+        </div>
+        <div class="card-content">
+          <h3>Computer Science</h3>
+          <p>Cutting-edge programs in Artificial Intelligence, Software Engineering, Data Science, and Cybersecurity from top-ranked universities like MIT, Stanford, and ETH Zurich.</p>
+          <div class="card-footer">
+            <span class="duration"><i class="far fa-clock"></i> 3-4 years</span>
+            <button class="view-btn">View Programs</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="business" data-search="business administration marketing finance management mba harvard lbs">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Business">
+          <span class="category-tag">Business</span>
+        </div>
+        <div class="card-content">
+          <h3>Business Administration</h3>
+          <p>Comprehensive degrees in Marketing, Finance, Entrepreneurship, and Management at prestigious institutions including Harvard, LBS, and INSEAD.</p>
+          <div class="card-footer">
+            <span class="duration"><i class="far fa-clock"></i> 1-4 years</span>
+            <button class="view-btn">View Programs</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="engineering" data-search="engineering mechanical civil electrical mit tu munich">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Engineering">
+          <span class="category-tag">Engineering</span>
+        </div>
+        <div class="card-content">
+          <h3>Engineering</h3>
+          <p>Specialized programs in Mechanical, Civil, Electrical, Aerospace, and Biomedical Engineering from world-renowned universities including MIT, Imperial, and TU Munich.</p>
+          <div class="card-footer">
+            <span class="duration"><i class="far fa-clock"></i> 3-5 years</span>
+            <button class="view-btn">View Programs</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="medicine" data-search="medicine mbbs nursing public health medical school">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Medicine">
+          <span class="category-tag">Health</span>
+        </div>
+        <div class="card-content">
+          <h3>Medicine & Health Sciences</h3>
+          <p>Medical programs including MBBS, Nursing, Dentistry, Public Health, and Biomedical Sciences from globally recognized institutions.</p>
+          <div class="card-footer">
+            <span class="duration"><i class="far fa-clock"></i> 4-6 years</span>
+            <button class="view-btn">View Programs</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="arts" data-search="arts humanities literature history philosophy fine arts">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Arts">
+          <span class="category-tag">Humanities</span>
+        </div>
+        <div class="card-content">
+          <h3>Arts & Humanities</h3>
+          <p>Explore literature, history, philosophy, languages, and fine arts programs from leading global universities with rich cultural heritage.</p>
+          <div class="card-footer">
+            <span class="duration"><i class="far fa-clock"></i> 3-4 years</span>
+            <button class="view-btn">View Programs</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="law" data-search="law llb international human rights oxford yale">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1589391886645-d51941baf7fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Law">
+          <span class="category-tag">Law</span>
+        </div>
+        <div class="card-content">
+          <h3>Law & Legal Studies</h3>
+          <p>Comprehensive law degrees including LLB, JD, International Law, and Human Rights Law at prestigious institutions like Oxford, Yale, and Harvard.</p>
+          <div class="card-footer">
+            <span class="duration"><i class="far fa-clock"></i> 3-5 years</span>
+            <button class="view-btn">View Programs</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="education" data-search="education teaching curriculum development leadership">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Education">
+          <span class="category-tag">Education</span>
+        </div>
+        <div class="card-content">
+          <h3>Education & Teaching</h3>
+          <p>Innovative programs in Teaching Methods, Curriculum Development, Educational Technology, and Leadership from top universities.</p>
+          <div class="card-footer">
+            <span class="duration"><i class="far fa-clock"></i> 1-4 years</span>
+            <button class="view-btn">View Programs</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="cs" data-search="computer science information technology cybersecurity">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="IT">
+          <span class="category-tag">Technology</span>
+        </div>
+        <div class="card-content">
+          <h3>Information Technology</h3>
+          <p>Specialized IT programs focusing on Cybersecurity, Network Engineering, Cloud Computing, and Systems Administration from technical institutes worldwide.</p>
+          <div class="card-footer">
+            <span class="duration"><i class="far fa-clock"></i> 2-4 years</span>
+            <button class="view-btn">View Programs</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="science" data-search="physics chemistry biology mathematics natural sciences">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Science">
+          <span class="category-tag">Science</span>
+        </div>
+        <div class="card-content">
+          <h3>Natural Sciences</h3>
+          <p>Programs in Physics, Chemistry, Biology, Mathematics, and Earth Sciences from leading research universities with state-of-the-art laboratories.</p>
+          <div class="card-footer">
+            <span class="duration"><i class="far fa-clock"></i> 3-4 years</span>
+            <button class="view-btn">View Programs</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="architecture" data-search="architecture design urban planning construction">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Architecture">
+          <span class="category-tag">Design</span>
+        </div>
+        <div class="card-content">
+          <h3>Architecture & Design</h3>
+          <p>Creative programs in Architecture, Interior Design, Urban Planning, and Landscape Architecture from world-class design schools.</p>
+          <div class="card-footer">
+            <span class="duration"><i class="far fa-clock"></i> 4-5 years</span>
+            <button class="view-btn">View Programs</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="business" data-search="finance accounting economics banking investment">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Finance">
+          <span class="category-tag">Finance</span>
+        </div>
+        <div class="card-content">
+          <h3>Finance & Economics</h3>
+          <p>Specialized degrees in Financial Analysis, Investment Banking, Accounting, and Economic Theory with practical industry applications.</p>
+          <div class="card-footer">
+            <span class="duration"><i class="far fa-clock"></i> 3-4 years</span>
+            <button class="view-btn">View Programs</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="pharmacy" data-search="pharmacy pharmacology pharmaceutical sciences drug development">
+        <div class="card-img">
+          <img src="https://images.unsplash.com/photo-1581093450021-4a7360e9a9e5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Pharmacy">
+          <span class="category-tag">Pharmacy</span>
+        </div>
+        <div class="card-content">
+          <h3>Pharmaceutical Sciences</h3>
+          <p>Comprehensive programs in Pharmacy, Pharmacology, Drug Development, and Clinical Research with hands-on laboratory experience and industry placements.</p>
+          <div class="card-footer">
+            <span class="duration"><i class="far fa-clock"></i> 4-5 years</span>
+            <button class="view-btn">View Programs</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="floating-notification" id="notification"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
